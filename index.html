@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+
+
+
+
+    <style>
+        body {
+            background: #485563;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #29323c, #485563);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #29323c, #485563);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            min-width: 100vh;
+        }
+
+        .title {
+            color: white;
+            text-align: center;
+            text-decoration: underline;
+
+        }
+
+        .container {
+            background-color: white;
+            width: 400px;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+
+        
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
     
+
+}
+.btn1{
+    margin: 20px 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.btn-a{
+    background-color: green;
+}
+.btn-b{
+    background-color: red;
+}
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <h1 class="title">LED BULB</h1>
+
+    <div class="container">
+
+        <img src="/lightbulb (1).png" height="300px" class="img-bulb" id="bulb1" />
+
+    </div>
+
+    <div class="btn-box">
+
+
+        <button type="button" class="btn1 btn-a" id="btn-on" onclick="bulbWork()">
+            &nbspON&nbsp
+        </button>
+        <button type="button" class="btn1 btn-b" id="btn-off" onclick="bulboOf()">
+            OFF
+        </button>
+
+    </div>
+
+
+
+
+
+    <script>
+ 
+  function bulbWork()
+  {
+const bulbActive=document.getElementById("bulb1");
+bulbActive.src=`lightbulb.png`;
+
+  }
+
+
+function bulboOf()
+{
+
+    const bulbActive=document.getElementById("bulb1");
+bulbActive.src=`lightbulb (1).png`;
+  
+
+}
+
+
+
+
+    </script>
 </body>
+
 </html>
